@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #28111e;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contador {
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.51);
+    padding: 10px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    animation: rgbEffect 3s infinite linear;
+    font-size: 20px;
+    font-family: arial;
+}
+
+.emoji {
+    position: absolute;
+    top: -50px;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.texto {
+    h1 {
+        font-size: 20px;
+    }
+
+    span {
+        font-weight: 100;
+    }
+}
+
+img {
+    width: 200px;
+}
+
+@keyframes rgbEffect {
+    0% {
+        color: red;
+    }
+
+    33% {
+        color: green;
+    }
+
+    66% {
+        color: blue;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+h3 {
+    font-size: 25px;
+}
+spot{
+    padding: 2px;
+}
+.spot{
+    color: white;
+    padding: 20px 60px 20px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.51);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    h1{
+        font-size: 15px;
+    }
+    img{
+        width: 100px;
+    }
+    margin-bottom: 30px;
+    h2{
+        font-size: 15px;
+    }
+}

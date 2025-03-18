@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU TE AMO MARIANA! 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://ih1.redbubble.net/image.5277945431.5746/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg">
+
+</head>
+
+<body>
+
+    <img src="coraçao.png">
+
+    <h3>21 de julho de 2024</h3>
+    <div id="contador">Calculando...</div>
+
+    <script>
+        function atualizarContador() {
+            const dataInicial = new Date('2024-07-21T00:00:00');
+            const agora = new Date();
+
+            let anos = agora.getFullYear() - dataInicial.getFullYear();
+            let meses = agora.getMonth() - dataInicial.getMonth();
+            let dias = agora.getDate() - dataInicial.getDate();
+            let horas = agora.getHours() - dataInicial.getHours();
+            let minutos = agora.getMinutes() - dataInicial.getMinutes();
+            let segundos = agora.getSeconds() - dataInicial.getSeconds();
+
+            if (segundos < 0) { segundos += 60; minutos--; }
+            if (minutos < 0) { minutos += 60; horas--; }
+            if (horas < 0) { horas += 24; dias--; }
+            if (dias < 0) {
+                let ultimoMes = new Date(agora.getFullYear(), agora.getMonth(), 0).getDate();
+                dias += ultimoMes;
+                meses--;
+            }
+            if (meses < 0) { meses += 12; anos--; }
+
+            document.getElementById('contador').innerText =
+                `${meses} meses, ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+        }
+
+        setInterval(atualizarContador, 1000);
+        atualizarContador();
+
+        // Chuva de Emojis 💖
+        function createEmoji() {
+            const emoji = document.createElement('div');
+            emoji.classList.add('emoji');
+            emoji.innerText = '💗';
+            document.body.appendChild(emoji);
+
+            const size = Math.random() * 30 + 20;
+            emoji.style.left = Math.random() * window.innerWidth + 'px';
+            emoji.style.fontSize = size + 'px';
+            emoji.style.animationDuration = Math.random() * 2 + 2 + 's';
+
+            setTimeout(() => emoji.remove(), 4000);
+        }
+
+        setInterval(createEmoji, 300);
+    </script>
+    <div class="texto">
+        <h3>
+            <span>
+                Feliz 8 Meses Juntinhos Amor!
+            </span>
+        </h3>
+        <h2>8 que de lado fica ∞ (inifinito)</h2>
+    </div>
+    <a href="https://open.spotify.com/intl-pt/track/56KDoLjFIm7Yc7fX1XgpNw?si=75acbe0ca33c4507">
+        <div class="spot">
+            <div>
+                <img src="https://i.scdn.co/image/ab67616d00001e0237a5a19e52f8260b3b158e55">
+            </div>
+            <div class="spot1">
+                <div>
+                    <h1>Always Been You</h1>
+                    <p>Shawn Mendes</p>
+                    <h2>APERTE</h2>
+                </div>
+            </div>
+        </div>
+    </a>
+    <div class="fotos">
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+    </div>
+</body>
+
+</html>
