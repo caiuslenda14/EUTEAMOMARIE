@@ -135,3 +135,6 @@ span{
     font-weight: 10000;
     animation: rgbEffect 3s infinite linear;
 }
+#baby{
+    width: 300px;
+}
