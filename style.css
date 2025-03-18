@@ -130,6 +130,8 @@ p{
     font-family: arial;
 }
 span{
-    font-weight: 1000;
+    font-style: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 10000;
     animation: rgbEffect 3s infinite linear;
 }
