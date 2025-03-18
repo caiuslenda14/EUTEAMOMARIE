@@ -8,6 +8,7 @@ body {
     align-items: center;
     height: 100px;
     padding: 20px;
+    margin-bottom: px;
 }
 
 h1 {
@@ -17,8 +18,8 @@ h1 {
 
 #contador {
     font-size: 10px;
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.51);
+    font-weight: 1000;
+    background: rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
@@ -76,27 +77,86 @@ img {
 h3 {
     font-size: 25px;
 }
-spot{
+
+spot {
     padding: 2px;
 }
-.spot{
+
+.spot {
+    text-align: left;
     color: white;
     padding: 20px 60px 20px 20px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.51);
+    background-color: rgba(0, 0, 0, 0.4);
     display: grid;
     grid-template-columns: 1fr 3fr;
-    h1{
+    a{
+        text-decoration: none;
+    }
+    h1 {
+        margin-left: 5px;
         font-size: 15px;
     }
-    img{
+
+    img {
         width: 100px;
     }
+
     margin-bottom: 30px;
-    h2{
+
+    h2 {
+        margin-left: 5px;
         font-size: 15px;
     }
+    div{
+        margin: 0 0 15px 0 ;
+    }
 }
-.fotos{
+
+.fotos {
     margin-bottom: 100%;
+}
+
+.batendo {
+    width: 150px;
+    /* Tamanho do coração */
+    display: block;
+    margin: 5px auto;
+    animation: batimento 1.5s infinite ease-in-out;
+}
+
+@keyframes batimento {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Aumenta um pouco */
+    }
+}
+
+
+.anifoto {
+    width: 150px;
+    /* Tamanho do coração */
+    display: block;
+    margin: 15px auto;
+    animation: anifoto 1.2s infinite ease-in-out;
+}
+
+
+@keyframes anifoto {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        /* Aumenta um pouco */
+    }
 }
